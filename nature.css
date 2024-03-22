@@ -1,0 +1,159 @@
+.heading {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 150px;
+  color: white;
+  font: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0.3, 0.9);
+  animation: fallAnimation 3s ease forwards;
+  z-index: 60;
+}
+#leaf {
+  animation: falling 12s linear infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-10%) rotate(10deg);
+  }
+  20% {
+    transform: translateX(1000px) rotate(-360deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-30deg);
+  }
+  60% {
+    transform: translateY(160px) rotate(30deg);
+  }
+  70% {
+    transform: translateY(-1000px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+
+@keyframes fallAnimation {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+#moon {
+  animation: rotateAnimation 30s linear infinite;
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.branch {
+  animation: shakeAnimation 5s ease-in-out infinite;
+}
+@keyframes shakeAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b,
+    #ffcc5c,
+    #ffeb5c,
+    #80d6ff
+  );
+  background-image: url(images/main-img-2.0.jpeg);
+  background-size: cover;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px; 
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+.images-all img {
+  position: absolute;
+  width: 30%;
+}
+#left-leaf {
+  top: -11px;
+  left: -60px;
+}
+#right-leaf {
+  top: 0px;
+  right: 0px;
+}
+#clouds {
+  height: 200px;
+  width: 300px;
+  top: 0px;
+  right: 500px;
+}
+#moon {
+  height: 250px;
+  width: 300px;
+  margin: 0 auto;
+  top: 200px;
+  right: 0;
+  left: 0;
+  animation: rotateAnimation 100s linear infinite;
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+}
+#cloud-2 {
+  height: 550px;
+  width: 820px;
+  top: -20px;
+  right: -100px;
+}} */
